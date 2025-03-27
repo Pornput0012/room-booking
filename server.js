@@ -2,7 +2,7 @@
 const { chromium } = require("playwright");
 const express = require("express");
 const app = express();
-const port = 8080;
+const port = process.env.PORT || 8080;
 
 // Set EJS as the view engine
 app.set("view engine", "ejs");
